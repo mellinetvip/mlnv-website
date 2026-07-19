@@ -180,9 +180,15 @@ Fair launch, transparent development and strong community vision.
 
 <br>
 
-<div class="contract">
+<div class="contract" id="contract">
 EQAmmWfjza2a_wc08y3ryJrFR_tHuIuaU_gKb7Zdi1GSbcKp
 </div>
+
+<br>
+
+<button class="btn" onclick="copyContract()">
+📋 Copy Contract
+</button>
 
 
 </div>
@@ -244,7 +250,17 @@ EQAmmWfjza2a_wc08y3ryJrFR_tHuIuaU_gKb7Zdi1GSbcKp
 © 2026 MLNV - Mellinetvip Community
 
 </footer>
+<script>
+function copyContract() {
+  const contract = "EQAmmWfjza2a_wc08y3ryJrFR_tHuIuaU_gKb7Zdi1GSbcKp";
 
+  navigator.clipboard.writeText(contract).then(() => {
+    alert("✅ Contract copied successfully!");
+  }).catch(() => {
+    alert("❌ Copy failed.");
+  });
+}
+</script>
 
 </body>
 </html>
