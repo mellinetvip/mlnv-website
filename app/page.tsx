@@ -1,3 +1,4 @@
+"use client";
 export default function Home() {
   const contract =
     "EQAmmWfjza2a_wc08y3ryJrFR_tHuIuaU_gKb7Zdi1GSbcKp";
