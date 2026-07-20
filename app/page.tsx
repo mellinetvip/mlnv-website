@@ -1,5 +1,4 @@
-"use client";
-export default function Home() {
+     export default function Home() {
   const contract =
     "EQAmmWfjza2a_wc08y3ryJrFR_tHuIuaU_gKb7Zdi1GSbcKp";
 
@@ -18,9 +17,7 @@ export default function Home() {
         Mellinetvip Community Token
       </p>
 
-      <p>
-        Built on TON Network
-      </p>
+      <p>Built on TON Network</p>
 
       <div
         style={{
@@ -34,23 +31,34 @@ export default function Home() {
         <a
           href="https://t.me/MLNVOfficial"
           target="_blank"
+          rel="noopener noreferrer"
         >
           Join Telegram
         </a>
 
-        <button
-          onClick={() => {
-            navigator.clipboard.writeText(contract);
-            alert("Contract copied!");
-          }}
+        <a
+          href={`https://tonviewer.com/${contract}`}
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          Copy Contract
-        </button>
+          View Contract
+        </a>
       </div>
 
       <p style={{ marginTop: 30 }}>
         🚀 DeDust Listing: Coming Soon
       </p>
+
+      <p
+        style={{
+          marginTop: 20,
+          maxWidth: 600,
+          wordBreak: "break-all",
+          color: "#8fbfff",
+        }}
+      >
+        {contract}
+      </p>
     </main>
   );
-}
+     }
